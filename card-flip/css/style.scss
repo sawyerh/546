@@ -17,19 +17,23 @@ img{
 
 .container{
     @include perspective(500px);
+    // perspective: 500px;
     width: 309px;
     height: 388px;
     margin: 50px auto;
     
     &:hover .card{
         @include transform( rotateX(180deg) );
+        // transform: rotateX(180deg);
     }
 }
 
 .card{
-    @include transition(1.65s);
     @include box-shadow(0 0 5px rgba(#000, 0.3));
+    @include transition(1.65s);
+    // transition: all 1.65s ease;
     @include transform-style(preserve-3d);
+    // transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
     height: 100%;
@@ -37,16 +41,17 @@ img{
 }
 
 .face{
-    bottom: 0;
     height: 100%;
-    left: 0;
+    width: 100%;
     position: absolute;
     right: 0;
+    left: 0;
     top: 0;
-    width: 100%;
+    bottom: 0;
     
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -58,6 +63,7 @@ img{
 
 .back{
     @include transform( rotateX(180deg) );
+    // transform: rotateX(180deg);
     @include border-radius(3px);
     background: #fff;
     text-align: center;
