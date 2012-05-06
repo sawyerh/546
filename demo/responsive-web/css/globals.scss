@@ -1,0 +1,85 @@
+$page_width: 1100px;
+$gutter: 40px;
+
+@function perc($inner, $container:$page_width) {
+  @return percentage($inner/$container);
+}
+
+// Clearfix
+@mixin clearfix {
+  zoom: 1;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+.clearfix {
+  @include clearfix;
+}
+
+// CSS3 Mixins
+@mixin transition($speed: 300ms, $type: all, $ease: ease){
+	-webkit-transition: $type $speed $ease;
+	-moz-transition: $type $speed $ease;
+	transition: $type $speed $ease;
+}
+@mixin transform($transformation){
+    -webkit-transform: $transformation;   
+       -moz-transform: $transformation;   
+        -ms-transform: $transformation;   
+         -o-transform: $transformation;
+            transform: $transformation;
+}
+@mixin transform-style($v){
+    -webkit-transform-style: $v;
+    -moz-transform-style: $v;
+    -ms-transform-style: $v;
+    -o-transform-style: $v;
+    transform-style: $v;
+}
+@mixin perspective($v){
+    -webkit-perspective: $v;
+    -moz-perspective: $v;
+    -ms-perspective: $v;
+    -o-perspective: $v;
+    perspective: $v;
+}
+@mixin perspective-origin($v){
+    -webkit-perspective-origin: $v;
+    -moz-perspective-origin: $v;
+    -ms-perspective-origin: $v;
+    -o-perspective-origin: $v;
+    perspective-origin: $v;
+}
+@mixin border-radius($radius: 3px) {
+    -webkit-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    -webkit-border-radius: $radius;
+    -moz-background-clip: padding;
+    -moz-background-clip: padding-box;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;
+}
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+@mixin box-sizing($box){
+  -webkit-box-sizing: $box;
+  -moz-box-sizing: $box;
+  -ms-box-sizing: $box;
+  -o-box-sizing: $box;
+  box-sizing: $box;
+}
+@mixin box-ordinal-group($num){
+    -webkit-box-ordinal-group: $num;
+    -moz-box-ordinal-group: $num;
+    -ms-box-ordinal-group: $num;
+    box-ordinal-group: $num;
+}

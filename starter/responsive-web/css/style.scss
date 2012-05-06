@@ -1,0 +1,59 @@
+@import 'globals';
+
+
+// **********************************************************
+//     Basic styling (nothing new here)
+// **********************************************************
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+.wrap{
+    width: $page_width;
+    margin: 50px auto;
+}
+
+header, nav, article, .ad, aside, footer{
+    text-align: center;
+    padding: 30px;
+    margin-bottom: $gutter;
+    display: block; // for HTML5 elements
+}
+
+header, footer{
+    background: #8AA627;
+}
+
+nav{
+    background: #D1DB59;
+}
+
+.ad{
+    background: #F48F63;
+}
+
+aside{
+    background: #9D4040;
+}
+
+article{
+    background: #279DA6;
+}
+
+p{
+    text-align: left;
+}
+
+// **********************************************************
+//     Layout in %
+// **********************************************************
+
+
+// **********************************************************
+//     Media queries for smaller screens
+// **********************************************************
+
+@media screen and (max-width: 560px){
+        
+}

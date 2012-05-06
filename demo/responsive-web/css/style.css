@@ -1,0 +1,40 @@
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff; }
+
+.wrap {
+  width: 1100px;
+  margin: 50px auto; }
+
+header, nav, article, .ad, aside, footer {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 40px;
+  display: block; }
+
+header, footer {
+  background: #8AA627; }
+
+nav {
+  background: #D1DB59; }
+
+.ad {
+  background: #F48F63; }
+
+aside {
+  background: #9D4040; }
+
+article {
+  background: #279DA6; }
+
+p {
+  text-align: left; }
