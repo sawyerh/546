@@ -1,1 +1,0 @@
-$(function(){var a=Modernizr.prefixed("transform");console.log(a)});

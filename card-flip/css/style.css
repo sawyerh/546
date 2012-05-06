@@ -23,14 +23,14 @@ img {
   max-width: 100%; }
 
 .container {
-  -webkit-perspective: 500;
-  -moz-perspective: 500;
-  -ms-perspective: 500;
-  -o-perspective: 500;
-  perspective: 500;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  -ms-perspective: 500px;
+  -o-perspective: 500px;
+  perspective: 500px;
   width: 309px;
   height: 388px;
-  margin: 80px auto; }
+  margin: 50px auto; }
   .container:hover .card {
     -webkit-transform: rotateX(180deg);
     -moz-transform: rotateX(180deg);
@@ -116,3 +116,13 @@ img {
     color: #111;
     font-size: 36px;
     margin: 50px 0 0; }
+.toggles{
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+}
+.toggles input{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
