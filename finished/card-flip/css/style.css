@@ -39,13 +39,13 @@ img {
     transform: rotateX(180deg); }
 
 .card {
-  -webkit-transition: all 1.65s ease;
-  -moz-transition: all 1.65s ease;
-  transition: all 1.65s ease;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 1.65s ease;
+  -moz-transition: all 1.65s ease;
+  transition: all 1.65s ease;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -57,15 +57,16 @@ img {
   width: 100%; }
 
 .face {
-  bottom: 0;
   height: 100%;
-  left: 0;
+  width: 100%;
   position: absolute;
   right: 0;
+  left: 0;
   top: 0;
-  width: 100%;
+  bottom: 0;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 .front {
@@ -116,13 +117,12 @@ img {
     color: #111;
     font-size: 36px;
     margin: 50px 0 0; }
-.toggles{
-    width: 300px;
-    margin: 40px auto;
-    text-align: center;
-}
-.toggles input{
+
+.toggles {
+  width: 300px;
+  margin: 40px auto;
+  text-align: center; }
+  .toggles input {
     margin-top: 20px;
     display: block;
-    width: 100%;
-}
+    width: 100%; }

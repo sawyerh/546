@@ -64,7 +64,7 @@ img{
 .back{
     @include transform( rotateX(180deg) );
     // transform: rotateX(180deg);
-    @include border-radius(3px);
+    @include border-radius;
     background: #fff;
     text-align: center;
         
